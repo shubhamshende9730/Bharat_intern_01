@@ -6,8 +6,6 @@
 }
 html{
 	scroll-behavior: smooth;
-	
-	/*   *** Storing Colors In Variables ***   */
 	--bg-clr-one: #f6f9fe;
 	--bg-clr-two: #f4f7fc;
 	--bg-clr-three: #eef1f6;
@@ -17,8 +15,6 @@ html{
 	--text-clr: #3f7277;
 	--secondary-heading: #277b6d;
 }
-
-/*   *** Reusable Code Starts ***   */
 button.btn{
 	background-color: var(--primary-clr);
 	color: var(--bg-clr-one);
@@ -59,8 +55,6 @@ button.btn:hover{
 	font-size: 15px;
 	color: var(--text-clr);
 }
-/*   *** Reusable Code Ends ***   */
-
 body{
 	width: 100%;
 	min-height: 100vh;
@@ -70,7 +64,6 @@ body{
 	max-width: 1500px;
 	margin: 0px auto;
 }
-/*   *** Home Section Styling Starts ***   */
 .home{
 	position: relative;
 	width: 100%;
@@ -276,9 +269,6 @@ button.contact-btn{
 	font-size: 14px;
 	color: var(--text-clr);
 }
-/*   *** Home Section Styling Ends ***   */
-
-/*   *** About Section Styling Starts ***   */
 .about{
 	padding: 90px 8% 40px;
 	display: flex;
@@ -365,9 +355,6 @@ button.contact-btn{
 	border-radius: 25px;
 	margin-top: 25px;
 }
-/*   *** About Section Styling Ends ***   */
-
-/*   *** Services Section Styling Starts   */
 .services .services-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -459,9 +446,6 @@ button.contact-btn{
 .services-container .service-box:hover.service-box h3{
 	color: #e3e3e8;
 }
-/*   *** Services Section Styling Ends   */
-
-/*   *** Resume Section Styling Starts   */
 .resume{
 	background-color: var(--bg-clr-one);
 }
@@ -532,9 +516,6 @@ button.contact-btn{
 	color: var(--secondary-heading);
 	font-weight: 500;
 }
-/*   *** Resume Section Styling Ends ***  */
-
-/*   *** Portfolio Section Styling Starts ***   */
 .portfolio .button-group{
 	text-align: center;
 	margin-bottom: 40px;
@@ -617,9 +598,6 @@ button.contact-btn{
 	background-color: var(--bg-clr-one);
 	color: var(--primary-clr);
 }
-/*   *** Portfolio Section Styling Ends ***   */
-
-/*   *** Testimonials Section Styling Starts ***   */
 .testimonials{
 	background-color: var(--bg-clr-one);
 }
@@ -722,9 +700,6 @@ button.contact-btn{
 .testimonials .owl-dots .owl-dot.active span{
 	background-color: var(--primary-clr) !important;
 }
-/*   *** Testimonials Section Styling Ends ***   */
-
-/*   *** Contact Section Styling Starts ***   */
 .contact-form{
 	width: 100%;
 	padding: 70px 8% 50px;
@@ -881,9 +856,6 @@ button.contact-btn{
 .column-2 .form-2 .form-button:hover{
 	background-color: var(--links-clr);
 }
-/*   *** Contact Section Styling Ends ***   */
-
-/*   *** Footer Section Styling Starts ***   */
 .page-footer{
 	width: 100%;
 	padding: 20px 8%;
@@ -910,34 +882,18 @@ button.contact-btn{
 	color: var(--primary-clr);
 	font-weight: bold;
 }
-/*   *** Footer Section Styling Ends ***   */
-
-
-
-
-
-
-/*   *** Media Query Starts ***   */
-
-/*   === Screen Size 1100px or Smaller  ===   */
 @media(max-width: 1100px){
-	/* Home Section */
 	.navbar ul.nav-links li{
 		margin: 0px 16px;
 	}
-	/* Services Section */
 	.services-container .service-box{
 		flex-basis: 48%;
 	}
-	/* Portfolio Section */
 	.portfolio .gallery .item{
 		width: calc(100% / 2);
 	}
 }
-
-/*   === Screen Size 768px or Smaller  ===   */
 @media(max-width: 768px){
-	/* Home Section */
 	.navbar .menu-btn{
 		display: block;
 		margin-left: 30px;
@@ -953,13 +909,11 @@ button.contact-btn{
 		transform: translateX(-30px);
 		opacity: 0;
 	}
-
 	.navbar ul.nav-links{
 		position: fixed;
 		width: 100%;
 		height: 100vh;
 		top: 0;
-		/*right: 0;*/
 		right: -100%;
 		display: flex;
 		flex-direction: column;
@@ -990,8 +944,6 @@ button.contact-btn{
 	.home .career-container{
 		grid-template-columns: 1fr;
 	}
-
-	/* About Section */
 	.about{
 		flex-direction: column;
 	}
@@ -1015,20 +967,17 @@ button.contact-btn{
 		min-width: 250px;
 		min-height: 300px;
 	}
-	/* Services Section */
+	
 	.services-container .service-box{
 		flex-basis: 100%;
 		margin-bottom: 10px;
 	}
-
-	/* Resume Section */
 	.resume .resume-row{
 		flex-direction: column;
 	}
 	.resume-row .column-right{
 		margin-top: 30px;
 	}
-	/* Contact Section */
 	.contact-form .contact-row{
 		flex-direction: column;
 	}
@@ -1048,22 +997,15 @@ button.contact-btn{
 		border: 1px solid #ddd;
 	}
 }
-
-/*   === Screen Size 600px or Smaller  ===   */
 @media(max-width: 600px){
-	/* Portfolio Section */
 	.portfolio .gallery .item{
 		width: 100%;
 	}
 }
-
-/*   === Screen Size 550px or Smaller  ===   */
 @media(max-width: 550px){
-	/* Home Section */
 	.hero .hero-image{
 		right: -200px;
 	}
-	/* Footer Section */
 	.page-footer .footer-contents{
 		flex-direction: column;
 	}
@@ -1074,12 +1016,8 @@ button.contact-btn{
 		margin-bottom: 10px;
 	}
 }
-
-/*   === Screen Size 350px or Smaller  ===   */
 @media(max-width: 350px){
 	button.contact-btn{
 		display: none;
 	}
 }
-
-/*   *** Media Query Ends ***   */
